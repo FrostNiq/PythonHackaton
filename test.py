@@ -9,11 +9,11 @@ def load_dict(path):
     in_file.close()
     return arrayOfWords
 
-a = load_dict("C:\Atom\Python\Hackaton\PythonHackaton\words.txt")
+#a = load_dict("C:\Atom\Python\Hackaton\PythonHackaton\words.txt")
+a = ["lots", "hackaton", "loto"]
 
-enteredWord = input("Provide the word to find anagrams for: ")
-#enteredWord = "Lots"
-enteredWord = enteredWord.lower()
+#enteredWord = input("Provide the word to find anagrams for: ")
+enteredWord = "slot"
 b = []
 for word in a:
     if len(word) == len(enteredWord):
@@ -21,9 +21,8 @@ for word in a:
 
 c = []
 for words in b:
-    result = True
-    if sorted(enteredWord) == sorted(words) :
-        c.append(words)
+    print(words)
+
 
 print(c)
 
