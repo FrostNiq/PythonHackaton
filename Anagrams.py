@@ -9,23 +9,23 @@ def load_dict(path):
     in_file.close()
     return arrayOfWords
 
-a = load_dict("C:\Atom\Python\Hackaton\PythonHackaton\words.txt")
+arrayOfImportedWords = load_dict("C:\Atom\Python\Hackaton\PythonHackaton\words.txt")
 
-enteredWord = input("Provide the word to find anagrams for: ")
-#enteredWord = "Lots"
+#enteredWord = input("Provide the word to find anagrams for: ")
+enteredWord = "Lots"
 enteredWord = enteredWord.lower()
-b = []
-for word in a:
-    if len(word) == len(enteredWord):
-        b.append(word)
+arrayOfWordsWithSameLength = []
+for importedWord in arrayOfImportedWords:
+    if len(importedWord) == len(enteredWord):
+        arrayOfWordsWithSameLength.append(importedWord)
 
-c = []
-for words in b:
+arrayOfAnagrams = []
+for words in arrayOfWordsWithSameLength:
     result = True
     if sorted(enteredWord) == sorted(words) :
-        c.append(words)
+        arrayOfAnagrams.append(words)
 
-print(c)
+print(arrayOfAnagrams)
 
 
 
