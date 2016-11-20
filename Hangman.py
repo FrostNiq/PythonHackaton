@@ -16,7 +16,7 @@ def chooseRandomWordFromFile(path):
   return wordFromFile
 
 word = chooseRandomWordFromFile("C:\Atom\Python\Hackaton\PythonHackaton\words.txt")
-print(word)
+#print(word)
 
 lengthOfChoosenWord = len(word)
 currentState = []
