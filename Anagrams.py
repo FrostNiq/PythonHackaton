@@ -11,8 +11,8 @@ def load_dict(path):
 
 arrayOfImportedWords = load_dict("C:\Atom\Python\Hackaton\PythonHackaton\words.txt")
 
-#enteredWord = input("Provide the word to find anagrams for: ")
-enteredWord = "Lots"
+enteredWord = input("Provide the word to find anagrams for: ")
+#enteredWord = "Lots"
 enteredWord = enteredWord.lower()
 arrayOfWordsWithSameLength = []
 for importedWord in arrayOfImportedWords:
